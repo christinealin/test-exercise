@@ -1,0 +1,123 @@
+html {
+	font-size:62.5%;
+}
+body {
+	font-family:Arial,sans-serif;
+	background:#CFD8DC;
+}
+h1 {
+	text-align: center;
+}
+#posts {
+    column-count: 4;
+    -webkit-column-count: 4;
+    column-gap: 1em;
+	-webkit-column-gap: 1em;
+	width:100%;
+}
+.post {
+	background:#fff;
+	padding:15px;
+	word-wrap:break-word;
+    display: inline-block;
+    margin:6px 0;
+    border:solid 1px #fff;
+    width: 90%;
+    width: calc(100% - 3.5rem);
+}
+.post:hover {
+	border:solid 1px #4CAF50;
+}
+.postid {
+	display:none;
+}
+.title {
+	font-size:1.25rem;
+	font-weight:bold;
+}
+.date {
+	font-size:.825rem;
+	margin:5px 0;
+}
+p {
+	word-wrap: break-word;
+}
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+table {
+	width:auto;
+	font-size: .825rem;
+}
+iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+#getmore {
+	text-align: center;
+    font-size: 1.5rem;
+    background: #4CAF50;
+    border-radius: 4px;
+    padding: 5px 5px;
+    width: 120px;
+    color: #fff;
+    border: solid 1px #388E3C;
+    margin: 10px auto;
+    cursor: pointer;
+}
+#getmore:hover {
+	background: #66BB6A;
+	color:#E8F5E9;
+}
+#nomore {
+    text-align: center;
+    font-size: 1.5rem;
+    margin:10px auto;
+    display:none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 8px;
+    height:5px;
+}
+::-webkit-scrollbar-track {
+    background:#eee;
+    border: thin solid #ECEFF1;
+    box-shadow: 0px 0px 3px #dfdfdf inset;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+    background:#999;
+    border: thin solid gray;
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#7d7d7d;
+}  
+
+@media only screen  and (max-width : 1200px) {
+	#posts {
+	    column-count: 3;
+	    -webkit-column-count: 3;
+	}
+}
+
+@media only screen  and (max-width : 800px) {
+	#posts {
+	    column-count: 2;
+	    -webkit-column-count: 2;
+	}
+}
+
+@media only screen  and (max-width : 550px) {
+	#posts {
+	    column-count: 1;
+	    -webkit-column-count: 1;
+	    column-gap: 1em;
+	}
+}
