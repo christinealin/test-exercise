@@ -2,11 +2,11 @@ var NUMPOSTS_TO_GET = 10;
 var offset = 0;
 
 function getPosts() {
-	var feed = "https://public-api.wordpress.com/rest/v1/sites/idcdistro.wordpress.com/posts/?callback=ajpRspthis";
-	feed += "&offset=" + offset;
-	feed += "&number=" + NUMPOSTS_TO_GET;
+	var feed_url = "https://public-api.wordpress.com/rest/v1/sites/idcdistro.wordpress.com/posts/?callback=ajpRspthis";
+	feed_url += "&offset=" + offset;
+	feed_url += "&number=" + NUMPOSTS_TO_GET;
 	$.ajax({
-		url: feed,
+		url: feed_url,
 		dataType: 'jsonp',
 		jsonpCallback: 'ajpRspthis',
 		jsonp: 'callback'
