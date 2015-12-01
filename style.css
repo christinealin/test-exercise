@@ -8,6 +8,22 @@ body {
 h1 {
 	text-align: center;
 }
+p {
+	word-wrap: break-word;
+}
+img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+table {
+	width:auto;
+	font-size: .825rem;
+}
+iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
 #posts {
     column-count: 4;
     -webkit-column-count: 4;
@@ -39,23 +55,7 @@ h1 {
 	font-size:.825rem;
 	margin:5px 0;
 }
-p {
-	word-wrap: break-word;
-}
-img {
-	max-width: 100%;
-	width: auto;
-	height: auto;
-}
-table {
-	width:auto;
-	font-size: .825rem;
-}
-iframe {
-	max-width: 100%;
-	max-height: 100%;
-}
-#getmore {
+#more-btn {
 	text-align: center;
     font-size: 1.5rem;
     background: #4CAF50;
@@ -67,11 +67,11 @@ iframe {
     margin: 10px auto;
     cursor: pointer;
 }
-#getmore:hover {
+#more-btn:hover {
 	background: #66BB6A;
 	color:#E8F5E9;
 }
-#nomore {
+#no-more {
     text-align: center;
     font-size: 1.5rem;
     margin:10px auto;

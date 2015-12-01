@@ -25,15 +25,15 @@ function ajpRspthis(data){
 		$("#posts").append(result);
 	}
 	else {
-		$('#getmore').hide();
-		$('#nomore').show();
+		$('#more-btn').hide();
+		$('#no-more').show();
 	}
 }
 
 $(function () {
 	getPosts();
 
-	$('#getmore').click(function() {
+	$('#more-btn').click(function() {
 		getPosts();
 	});
 });

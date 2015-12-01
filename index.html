@@ -2,15 +2,12 @@
 <head>
     <title>Someone Else's Blog</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<h1>Someone Else's Blog</h1>
-	<div id="container">
-		<div id="posts"></div>
-	</div>
-	<div id="getmore">Load more posts</div>
-	<div id="nomore">No more posts</div>
+	<div id="posts"></div>
+	<div id="more-btn">Load more posts</div>
+	<div id="no-more">No more posts</div>
 	<script type="text/template" id="itemTemplate">		
 		{{#posts}}
 		<div class="post">
